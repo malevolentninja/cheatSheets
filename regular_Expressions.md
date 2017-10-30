@@ -37,3 +37,29 @@ A few notes.
 - ' a{1,3} ' between one & three
 - ' a+? a{2,}? ' match as few as possible
 - ' ab|cd ' match ab or cd
+
+
+## Example: Email Verification
+
+A special text string for describing a search pattern. 
+*.txt file looks like
+```sh
+^.*\.txt$
+```
+
+You can use the regular expression: 
+
+```sh
+\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\b
+```
+To search for an email address.
+
+
+Changing \b with a ^  and the last \b with a $:
+
+```sh
+^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$ 
+
+```
+Checks wether the user has entered a properly formatted email address. 
+
