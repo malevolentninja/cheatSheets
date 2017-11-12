@@ -33,14 +33,20 @@
 | git add <resolved-file> or git rm <resolved-file>| editor to manually solve conflicts (after resolved mark as reolved)|
 | git log --stat -M| show all commit logs with indication of any paths that may have moved|
 | git log | show all commits in the current branch's history|
-
-
-
-
-
-
-
-
+| git log -p <file>| show changes over time for a specific file|
+| git blame <file> | who changed what and when in <file>|
+| git rm [file] | delete the file from the project and stage the removal from commit|
+| git mv [existing path] [new-path]| change an existing file path and stage the move
+| rebase |
+| git rebase <branch>| rebase your current HEAD onto <branch>|
+| git rebase --abort | abort a rebase|
+| git rebase --continue | continue a rebase after resolving conflicts|
+| Update & Publish|
+| git remote -v  | list all currently configured remotes |
+| git remote show <remote>| show information about a remote |
+| git remote add <shortname> <url> | add new remote repository, named <remote> |
+| git fetch <remote> | download all changes from <remote> but don't integrate|
+| git pull <remote> <branch>| download changes and directly merge/integrate into HEAD|
 
 
 
