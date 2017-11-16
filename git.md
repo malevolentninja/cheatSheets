@@ -47,7 +47,9 @@
 | git remote add <shortname> <url> | add new remote repository, named <remote> |
 | git fetch <remote> | download all changes from <remote> but don't integrate|
 | git pull <remote> <branch>| download changes and directly merge/integrate into HEAD|
-
+| git push <remote> <branch>| publish local changes on a remote |
+| git branch -dr <remote/branch>| delete a branch on the remote |
+| git push --tags|publish your tags |
 
 
 
